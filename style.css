@@ -50,10 +50,6 @@ ul a {
   text-decoration: none;
 }
 
-.section {
-  color: white;
-}
-
 .secure {
   margin-left: 5%;
   margin-top: 15%;
@@ -110,6 +106,7 @@ ul a {
 
 .section {
   display: flex;
+  color: white;
 }
 
 .illustration {
@@ -119,14 +116,14 @@ ul a {
 
 .hosting {
   color: black;
-  padding: 10%;
+  padding: 5%;
 }
 .hosting h2 {
   display: flex;
   justify-content: center;
   font-size: 35px;
   font-weight: 800;
-  padding: 15px;
+  padding: 10px;
 }
 .hosting p {
   display: flex;
@@ -162,9 +159,6 @@ ul a {
   padding-left: 110px;
   padding-top: 5%;
 }
-.wish .texte-wish {
-  display: flex;
-}
 .wish .piece {
   position: absolute;
 }
@@ -183,9 +177,6 @@ ul a {
   padding-left: 110px;
   padding-top: 5%;
 }
-.security .texte-security {
-  display: flex;
-}
 .security .globe {
   position: absolute;
 }
@@ -200,8 +191,64 @@ ul a {
   font-weight: normal;
 }
 
-.carte {
+.top {
+  height: 20vh;
+}
+
+.middle {
+  height: 760px;
+  background-color: #F7F8FF;
+  position: relative;
+}
+.middle > div {
+  max-width: 1400px;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  height: 100%;
+}
+.middle .fusee {
+  width: 77px;
+  height: 77px;
   display: flex;
+  flex-direction: row;
+}
+.middle .nuage {
+  padding-left: 35vh;
+}
+.middle .decolage {
+  padding-left: 60%;
+}
+.middle .block {
+  height: 55%;
+  width: 50%;
+  background: #93A5FF;
+  border-radius: 6px;
+  padding-top: 5%;
+}
+.middle h3 {
+  font-size: 23px;
+  padding-top: 35px;
+  padding-left: 50px;
+  color: white;
+}
+.middle p {
+  font-size: 20px;
+  padding-top: 15px;
+  padding-left: 50px;
+}
+.middle .build p {
+  color: white;
+}
+.middle .learn {
+  width: 178px;
+  height: 54px;
+  color: #93A5FF;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border-width: 0px;
+  font-size: 600;
+  margin-left: 65%;
 }
 
 /*# sourceMappingURL=style.css.map */
