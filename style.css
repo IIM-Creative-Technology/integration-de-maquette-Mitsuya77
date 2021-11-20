@@ -43,6 +43,13 @@ ul a {
   text-decoration: none;
 }
 
+ul li:hover {
+  background-color: blue;
+  width: auto;
+  height: 100%;
+  font-weight: bold;
+}
+
 .nav-item {
   margin-right: 5rem;
   text-transform: uppercase;
@@ -256,6 +263,9 @@ ul a {
   font-size: 600;
   margin-left: 65%;
 }
+.middle .pbuton {
+  padding-bottom: 50px;
+}
 
 .start {
   display: flex;
@@ -373,11 +383,13 @@ ul a {
   display: flex;
   justify-content: space-between;
   padding: 80px;
+  padding-bottom: 8%;
 }
 
 .bubu {
   display: flex;
   justify-content: center;
+  padding-bottom: 8%;
 }
 
 .free {
@@ -389,6 +401,89 @@ ul a {
   border-radius: 5px;
   border-width: 0px;
   font-size: 600;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  width: 150px;
+}
+
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 100px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+  width: 150px;
+}
+
+.footer-col a:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.paiment {
+  display: flex;
+}
+
+.visa {
+  padding: 5px;
+}
+
+.bottom-footer {
+  padding-top: 60px;
+}
+
+.adresse {
+  padding-top: 15px;
+  width: 175px;
+  color: white;
+}
+
+.gauche {
+  padding-top: 60px;
+}
+
+.service {
+  padding-top: 15px;
+  width: 250px;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
