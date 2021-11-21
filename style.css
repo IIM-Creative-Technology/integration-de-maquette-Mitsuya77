@@ -43,11 +43,13 @@ ul a {
   text-decoration: none;
 }
 
-ul li:hover {
-  background-color: blue;
-  width: auto;
-  height: 100%;
-  font-weight: bold;
+.menu ul li :hover {
+  background-color: #93A5FF;
+  width: 100px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
 }
 
 .nav-item {
@@ -121,6 +123,15 @@ ul li:hover {
   padding-top: 120px;
 }
 
+button {
+  background-color: white;
+  color: #93A5FF;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border-width: 0px;
+  font-weight: 600;
+}
+
 .hosting {
   color: black;
   padding: 5%;
@@ -137,8 +148,18 @@ ul li:hover {
   justify-content: center;
 }
 
+.wiwi {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  margin: 0 auto;
+}
+
 .care {
   padding-left: 100px;
+}
+.care .welcome {
+  top: 0;
 }
 .care .texte-give {
   display: flex;
@@ -161,7 +182,6 @@ ul li:hover {
 }
 
 .wish {
-  padding-left: 110px;
   padding-top: 5%;
 }
 .wish .piece {
@@ -178,7 +198,6 @@ ul li:hover {
 }
 
 .security {
-  padding-left: 110px;
   padding-top: 5%;
 }
 .security .globe {
@@ -484,6 +503,263 @@ a {
   padding-top: 15px;
   width: 250px;
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  ul {
+    display: none;
+  }
+
+  ul a {
+    display: none;
+  }
+
+  .illustration {
+    display: none;
+  }
+
+  .secure {
+    margin-left: 5%;
+    margin-top: 15%;
+  }
+  .secure h1 {
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .secure p {
+    font-size: 15px;
+    padding-bottom: 45px;
+  }
+
+  .formulaire {
+    padding-top: 15px;
+  }
+
+  .texte-formulaire {
+    width: 260px;
+    height: 63px;
+    padding: 10px;
+  }
+
+  .select-formulaire {
+    width: 50px;
+    height: 63px;
+  }
+
+  .submit-formulaire {
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  ::placeholder {
+    color: white;
+    font-size: 12px;
+  }
+
+  .hosting {
+    color: black;
+  }
+  .hosting h2 {
+    font-size: 20px;
+  }
+  .hosting p {
+    font-size: 12px;
+  }
+
+  .wiwi {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .care {
+    padding-left: 20px;
+  }
+  .care h3 {
+    padding-left: 20px;
+    font-size: 15px;
+    color: black;
+  }
+  .care p {
+    padding-left: 80px;
+    font-size: 12px;
+  }
+
+  .wish {
+    padding-top: 15%;
+  }
+  .wish h3 {
+    padding-left: 70px;
+    font-size: 15px;
+    padding-bottom: 20px;
+  }
+  .wish p {
+    padding-left: 80px;
+    font-size: 12px;
+  }
+
+  .security {
+    padding-top: 15%;
+  }
+  .security h3 {
+    padding-left: 70px;
+    font-size: 15px;
+    padding-bottom: 20px;
+  }
+  .security p {
+    padding-left: 80px;
+    font-size: 12px;
+  }
+
+  .welcome {
+    width: 100%;
+    height: auto;
+  }
+
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .testimonial-box-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testimonial-box {
+    width: 400px;
+  }
+
+  .profile-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .etoile {
+    padding-left: 70px;
+  }
+
+  .marque {
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+    padding-bottom: 25%;
+  }
+
+  .robien {
+    padding-bottom: 25px;
+  }
+
+  .container {
+    max-width: 840px;
+    margin: auto;
+  }
+
+  .footer {
+    background-color: #24262b;
+    padding: 10px 0;
+  }
+
+  .footer-col {
+    width: 25%;
+    padding: 0 100px;
+  }
+
+  .footer-col h4 {
+    font-size: 15px;
+    margin-bottom: 15px;
+    padding-top: 25px;
+  }
+
+  .footer-col a:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .footer-col a {
+    font-size: 12px;
+  }
+
+  .visa {
+    display: flex;
+    width: 60px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .start {
+    display: flex;
+    justify-content: start;
+  }
+
+  .fusee {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nuage {
+    display: none;
+  }
+
+  .barre {
+    display: none;
+  }
+
+  .decolage {
+    padding-left: 2%;
+  }
+
+  .block {
+    height: 10px;
+    width: 10px;
+    background: #93A5FF;
+    border-radius: 6px;
+    padding-top: 5%;
+  }
+
+  .second-block {
+    height: 150px;
+    width: 150px;
+    background: #424D83;
+    border-radius: 6px;
+    padding-top: 5%;
+  }
+
+  h3 {
+    font-size: 12px;
+    padding-top: 35px;
+    padding-left: 0px;
+    color: white;
+  }
+
+  p {
+    font-size: 5px;
+    padding-top: 15px;
+    padding-left: 0px;
+  }
+
+  .build p {
+    color: white;
+  }
+
+  .learn {
+    width: 100px;
+    height: 20px;
+    color: #93A5FF;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border-width: 0px;
+    font-size: 600;
+    margin-left: 0%;
+  }
+
+  .pbuton {
+    padding-bottom: 0px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
