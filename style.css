@@ -438,7 +438,7 @@ a {
 }
 
 .footer {
-  background-color: #24262b;
+  background-color: #424D83;
   padding: 70px 0;
 }
 
@@ -505,7 +505,26 @@ a {
   color: white;
 }
 
+label {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
+  .menu {
+    height: 60px;
+  }
+
+  label {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+  }
+
   ul {
     display: none;
   }
@@ -564,6 +583,8 @@ a {
   }
   .hosting h2 {
     font-size: 20px;
+    display: flex;
+    justify-content: center;
   }
   .hosting p {
     font-size: 12px;
@@ -622,6 +643,10 @@ a {
 
   .container {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card-body p {
+    font-size: 12px;
   }
 
   .testimonial-box-container {
@@ -691,7 +716,7 @@ a {
 @media screen and (max-width: 500px) {
   .start {
     display: flex;
-    justify-content: start;
+    flex-direction: row;
   }
 
   .fusee {
@@ -710,55 +735,29 @@ a {
   }
 
   .decolage {
+    width: 150px;
+    height: 60px;
     padding-left: 2%;
   }
 
-  .block {
-    height: 10px;
-    width: 10px;
-    background: #93A5FF;
-    border-radius: 6px;
-    padding-top: 5%;
-  }
-
-  .second-block {
-    height: 150px;
-    width: 150px;
-    background: #424D83;
-    border-radius: 6px;
-    padding-top: 5%;
-  }
-
-  h3 {
-    font-size: 12px;
-    padding-top: 35px;
-    padding-left: 0px;
-    color: white;
-  }
-
-  p {
-    font-size: 5px;
-    padding-top: 15px;
-    padding-left: 0px;
+  .build h3 {
+    font-size: 15px;
+    padding-left: 5px;
   }
 
   .build p {
-    color: white;
+    font-size: 10px;
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-bottom: 15px;
   }
 
-  .learn {
+  .pbuton .learn {
     width: 100px;
-    height: 20px;
-    color: #93A5FF;
-    padding: 8px 16px;
-    border-radius: 5px;
-    border-width: 0px;
-    font-size: 600;
-    margin-left: 0%;
-  }
-
-  .pbuton {
-    padding-bottom: 0px;
+    height: 34px;
+    padding: 4px 8px;
+    font-size: 8px;
+    margin-left: 10%;
   }
 }
 
